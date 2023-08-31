@@ -90,3 +90,54 @@ const dv = (
 )
 ```
 
+## 条件渲染
+
+根据条件渲染特定的 JSX 结构，使用 if/else 或三元运算符或逻辑与运算符实现。
+
+```jsx
+const loadData = () => {
+    if (isLoading) {
+        return <div>数据加载中，请稍后...</div>
+    }
+    return (
+        <div>数据加载完成，此处显示加载后的数据</div>
+    )
+}
+const dv = (
+    <div>
+        {loadData()}
+    </div>
+)
+```
+
+## 列表渲染
+
+渲染一组数据，应使用数组的 map() 方法。渲染列表时应该添加 key 属性，key 属性的值要保证唯一，尽量避免使用索引号作为 key.
+
+```jsx
+const songs = [
+    {id: 1, name: 'ly'},
+    {id: 2, name: 'lc'},
+    {id: 3, name: 'zh'},
+]
+const list = (
+    <ul>
+        {songs.map(item => <li key={item.id}>{item.name}</li>)}
+    </ul>
+)
+```
+
+## 样式处理
+
+```jsx
+// 行内样式
+<h1 style={{ color: 'red', backgroundColor: 'skyblue' }}>
+    JSX的样式处理
+</h1>
+
+// 类名，建议使用
+<h1 className="title">
+    JSX的样式处理
+</h1>
+```
+
