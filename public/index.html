@@ -24,6 +24,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <!-- 引入 react 和 react-dom 两个 js 文件 -->
+    <!-- <script src="../node_modules/react/umd/react.development.js"></script> -->
+    <!-- <script src="../node_modules/react-dom/umd/react-dom.development.js"></script> -->
+    
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +44,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+<!-- 
+    <script type="module">
+        // 创建 React 元素
+        // React.createElement()说明
+        // 返回值：React元素
+        //  第一个参数：创建的React元素名称
+        // 第二个参数：React元素的属性
+        // 第三个及其以后的参数：React元素的子节点
+        const title = React.createElement('h1', null, 'Hello React')
+        // 渲染 React 元素到页面中
+        // ReactDOM.render() 说明
+        // 第一个参数：要渲染的React元素
+        // 第二个参数：DOM对象，用于指定渲染到页面中的位置
+        ReactDOM.render(title, document.getElementById('root'))
+    </script> 
+  -->
+
   </body>
 </html>
