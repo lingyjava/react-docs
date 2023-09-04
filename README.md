@@ -5,7 +5,7 @@ React 相关文档记录。
 | ------------------------------------ | ---- |
 | [1·React概述](./docs/1·React概述.md) |      |
 | [2·JSX](./docs/2·JSX.md)             |      |
-|                                      |      |
+| [3·组件基础](./docs/3·组件基础.md)   |      |
 
 
 # Getting Started with Create React App
