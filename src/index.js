@@ -37,7 +37,7 @@ root.render(
       {(state, handler) => <div style={{width: '2560px', height: '1660px'}} onMouseMove={handler}>鼠标当前位置 {state.x} {state.y}</div>}
     </Mouse> */}
 
-    <MouseWithLoading isLoading="true">
+    <MouseWithLoading isLoading={false}>
       {(state, handler) => <div style={{width: '2560px', height: '1660px'}} onMouseMove={handler}>鼠标当前位置 {state.x} {state.y}</div>}
     </MouseWithLoading>
   </React.StrictMode>
