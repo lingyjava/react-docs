@@ -34,6 +34,6 @@ Mouse.propTypes = {
 
 // export default Mouse;
 
+// 使用高阶组件
 const MouseWithLoading = withLoading(Mouse);
-
 export default MouseWithLoading;

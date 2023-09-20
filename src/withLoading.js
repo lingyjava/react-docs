@@ -12,13 +12,20 @@ function withLoading(WrappedComponent) {
         if (isLoading) {
             return <div>Loading...</div>;
         } else {
-            return <WrappedComponent {...props} />;
+            // 渲染 WrappedComponent 时，将 this.props （isLoading可选） 传递给组件, 解决高阶组件不往下传递props问题。
+            return <WrappedComponent {...props} {...isLoading}  />;
         }
     };
 
     WithLoadingComponent.propTypes = {
         isLoading: PropTypes.bool.isRequired
     }
+
+    // 设置 displayName
+    function getDisplayName(WrappedComponent) {
+        return WrappedComponent.displayName || WrappedComponent.name || 'Component'
+    }
+    WithLoadingComponent.displayName = `HOC(${getDisplayName(WrappedComponent)})`
 
     return WithLoadingComponent;
 }
