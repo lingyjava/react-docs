@@ -1,12 +1,12 @@
 # React docs
 React 相关文档记录。
 
-| base                                 |      |
-| ------------------------------------ | ---- |
-| [1·React概述](./docs/1·React概述.md) |      |
-| [2·JSX](./docs/2·JSX.md)             |      |
-| [3·组件基础](./docs/3·组件基础.md)   |      |
-| [4·组件进阶](./docs/4·组件进阶.md)   |      |
+| base                                       |
+| ------------------------------------------ |
+| [1·React概述](./docs/1·React概述.md)       |
+| [2·JSX](./docs/2·JSX.md)                   |
+| [3·组件基础](./docs/3·组件基础.md)         |
+| [4·组件核心技术](./docs/4·组件核心技术.md) |
 
 
 # Getting Started with Create React App

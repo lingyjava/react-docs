@@ -19,7 +19,7 @@ const obj = {
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <Components /> */}
+    <Components />
 
     {/* <ComponentsPlus name="lingyuan">
       <div>子节点</div>
@@ -37,9 +37,9 @@ root.render(
       {(state, handler) => <div style={{width: '2560px', height: '1660px'}} onMouseMove={handler}>鼠标当前位置 {state.x} {state.y}</div>}
     </Mouse> */}
 
-    <MouseWithLoading isLoading={false}>
+    {/* <MouseWithLoading isLoading={false}>
       {(state, handler) => <div style={{width: '2560px', height: '1660px'}} onMouseMove={handler}>鼠标当前位置 {state.x} {state.y}</div>}
-    </MouseWithLoading>
+    </MouseWithLoading> */}
   </React.StrictMode>
 );
 
