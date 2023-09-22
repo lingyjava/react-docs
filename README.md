@@ -7,6 +7,7 @@ React 相关文档记录。
 | [2·JSX](./docs/2·JSX.md)                   |
 | [3·组件基础](./docs/3·组件基础.md)         |
 | [4·组件核心技术](./docs/4·组件核心技术.md) |
+| [5·路由基础](./docs/5·路由基础.md)         |
 
 
 # Getting Started with Create React App
